@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#editor {
+  border: 1px solid #f05454;
+  border-radius: 0.25rem;
+  padding: 1rem 4rem 2rem 4rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#editor h1 {
+  margin-bottom: 1.5rem;
+}
+#editor h2 {
+  margin-bottom: 1rem;
+}
+#editor #options {
+  display: flex;
+  margin-bottom: 3rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+#editor #options .option {
+  display: flex;
+  flex-direction: column;
+}
+#editor #options .panelInput {
+  height: 5rem;
+  width: 5rem;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #222831;
+  color: #e8e8e8;
+  border: 1px solid #30475e;
+  border-radius: 0.25rem;
+  margin: 0 1rem 0.5rem 1rem;
+  padding-left: 1rem;
+}
+#editor #options .panelInput:focus {
+  outline: none !important;
+  border-color: #f05454;
+  box-shadow: 0 0 0.5rem #30475e;
+}
+#editor .button {
+  font-size: 1.25rem;
+  background-color: #f05454;
+  color: #e8e8e8;
+  padding: 1rem 3rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease-in-out;
+  margin-bottom: 2rem;
+}
+#editor .button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border-color: #f05454;
+}
+#editor .circle-picker {
+  margin-bottom: 1.5rem !important;
 }
 
-.App-link {
-  color: #61dafb;
+.row {
+  display: flex;
+  width: fit-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App {
+  text-align: center;
+  background: grey;
 }
+
+/*# sourceMappingURL=App.css.map */
